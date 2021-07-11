@@ -472,6 +472,43 @@ temaSaxEuphoniumTrioFinale = {
   ees8. r16 r4 |
 }
 
+temaSaxEuphoniumTrioSquare =   {
+  bes8\mf( aes4 g8) |
+  f8( ees4 f8) |
+  ees4-. ees4-- |
+  ees4-. r |
+
+  bes'8( aes4 g8) |
+  c8( cis4 c8) |
+  bes4.( g8) |
+  e4-. r |
+
+  c'8( ees4 c8) |
+  aes8( g4 f8) |
+  bes8-. ees4-. g8-. |
+}
+
+temaSaxEuphoniumTrioVoltaUnoSquare = {
+  bes8( aes4 ees8) |
+  c8( d4 ees8) |
+  aes8 c4 f,8 |
+  aes8 g4 ees8 |
+  f4 r |
+}
+
+
+temaSaxEuphoniumTrioVoltaDueSquare = {
+  bes8( aes4 ees8) |
+}
+
+temaSaxEuphoniumTrioFinaleSquare = {
+  f8-. bes4-. b8-. |
+  c8-. cis4-. d8-. |
+  ees4 ees8. ees16 |
+  ees8. r16 r4 |
+}
+
+
 trioTrTrb = {
   ees4\mf d |
   c4 bes |
@@ -652,38 +689,82 @@ scoreClarinetOne =
   %trio
   \key ees \major
   R2 * 4 |
-
-  \repeat volta 2 {
-    \tuplet 3/2 {ees8\p bes g } \tuplet 3/2 {bes g ees} |
-    \tuplet 3/2 {bes8 ees g } \tuplet 3/2 {bes g ees} |
-    \tuplet 3/2 {ees'8 bes g } \tuplet 3/2 {bes g ees} |
-    \tuplet 3/2 {bes8 ees g } \tuplet 3/2 {ees g bes} |
-
-    \tuplet 3/2 {ees8 bes g } \tuplet 3/2 {bes g ees} |
-    \tuplet 3/2 {g8 ees' d } \tuplet 3/2 {c bes aes} |
-    \tuplet 3/2 {g8 e g } \tuplet 3/2 {e bes' e,} |
-    \tuplet 3/2 {c'8 e, c' } \tuplet 3/2 {e, bes' e,} |
-
-    \tuplet 3/2 {f8 g aes } \tuplet 3/2 {c aes f} |
-    \tuplet 3/2 {aes8 c d } \tuplet 3/2 {f d bes} |
-    \tuplet 3/2 {g8 ees g } \tuplet 3/2 {bes g bes} |
-  }
-  \alternative {
-    {
-      \tuplet 3/2 {ees8 bes g} \tuplet 3/2 {ees bes' g} |
-      \tuplet 3/2 {ees8 g c} \tuplet 3/2 {bes g ees} |
-      \tuplet 3/2 {c8 ees aes} \tuplet 3/2 {ees aes c} |
-      \tuplet 3/2 {c,8 f aes} \tuplet 3/2 {c aes c} |
-      bes 4 r |
+  <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "clarinet1"
+      \magnifyStaff #2/3
+      %firstClef = ##f
     }
     {
-      \tuplet 3/2 {ees,8 g bes} \tuplet 3/2 {g bes g} |
+      \repeat volta 2 \relative c'' {
+        ees8\p bes16 g  bes g ees8 |
+        bes8 ees16 g  bes g ees8 |
+        ees'8 bes16 g  bes g ees8 |
+        bes8 ees16 g  ees g bes8 |
+
+        ees8 bes16 g  bes g ees8 |
+        g8 ees'16 d  c bes aes8 |
+        g8 e16 g  e bes' e,8 |
+        c'8 e,16 c'  e, bes' e,8 |
+
+        f8 g16 aes  c aes f8 |
+        aes8 c16 d  f d bes8 |
+        g8 ees16 g  bes g bes8 |
+
+
+      }
+      \alternative {
+        \relative c'' {
+          ees8 bes16 g ees bes' g8 |
+          ees8 g16 c bes g ees8 |
+          c8 ees16 aes ees aes c8 |
+          c,8 f16 aes c aes c8 |
+          bes 4 r
+        }
+        \relative c' { ees8 g16 bes g bes g8 |}
+      }
+      f8 bes16 d f d b8 |
+      g8 c16 ees g cis, d8 |
+      ees4 ees8. ees16 |
+      ees8. r16 r4 |
     }
-  }
-  \tuplet 3/2 {f8 bes d} \tuplet 3/2 {f d b} |
-  \tuplet 3/2 {g8 c ees} \tuplet 3/2 {g cis, d} |
-  ees4 ees8. ees16 |
-  ees8. r16 r4 |
+    {
+      \repeat volta 2 \relative c'' {
+        \tuplet 3/2 {ees8\p bes g } \tuplet 3/2 {bes g ees} |
+        \tuplet 3/2 {bes8 ees g } \tuplet 3/2 {bes g ees} |
+        \tuplet 3/2 {ees'8 bes g } \tuplet 3/2 {bes g ees} |
+        \tuplet 3/2 {bes8 ees g } \tuplet 3/2 {ees g bes} |
+
+        \tuplet 3/2 {ees8 bes g } \tuplet 3/2 {bes g ees} |
+        \tuplet 3/2 {g8 ees' d } \tuplet 3/2 {c bes aes} |
+        \tuplet 3/2 {g8 e g } \tuplet 3/2 {e bes' e,} |
+        \tuplet 3/2 {c'8 e, c' } \tuplet 3/2 {e, bes' e,} |
+
+        \tuplet 3/2 {f8 g aes } \tuplet 3/2 {c aes f} |
+        \tuplet 3/2 {aes8 c d } \tuplet 3/2 {f d bes} |
+        \tuplet 3/2 {g8 ees g } \tuplet 3/2 {bes g bes} |
+      }
+      \alternative {
+        \relative c'' {
+          \tuplet 3/2 {ees8 bes g} \tuplet 3/2 {ees bes' g} |
+          \tuplet 3/2 {ees8 g c} \tuplet 3/2 {bes g ees} |
+          \tuplet 3/2 {c8 ees aes} \tuplet 3/2 {ees aes c} |
+          \tuplet 3/2 {c,8 f aes} \tuplet 3/2 {c aes c} |
+          bes 4 r |
+        }
+        \relative c' {
+          \tuplet 3/2 {ees8 g bes} \tuplet 3/2 {g bes g} |
+        }
+      }
+      \relative c' {
+        \tuplet 3/2 {f8 bes d} \tuplet 3/2 {f d b} |
+        \tuplet 3/2 {g8 c ees} \tuplet 3/2 {g cis, d} |
+        ees4 ees8. ees16 |
+        ees8. r16 r4
+      } |
+    }
+  >>
   \finaleUno
 }
 
@@ -711,37 +792,82 @@ scoreClarinetTwo = \relative c' {
   %trio
   \key ees \major
   R2 * 4 |
-
-  \repeat volta 2 {
-    \tuplet 3/2 {bes,8\p g ees} \tuplet 3/2 {g ees bes} |
-    \tuplet 3/2 {ees8 g bes} \tuplet 3/2 {ees bes g} |
-    \tuplet 3/2 {bes8 g ees} \tuplet 3/2 {g ees bes} |
-    \tuplet 3/2 {ees8 g bes} \tuplet 3/2 {g bes ees} |
-
-    \tuplet 3/2 {g8 ees bes} \tuplet 3/2 {ees bes g} |
-    \tuplet 3/2 {ees8 c' bes} \tuplet 3/2 {aes g f} |
-    \tuplet 3/2 {e'8 c e} \tuplet 3/2 {c e c} |
-    \tuplet 3/2 {e8 bes e} \tuplet 3/2 {c e c} |
-
-    \tuplet 3/2 {c,8 ees f} \tuplet 3/2 {aes f c} |
-    \tuplet 3/2 {f8 aes bes} \tuplet 3/2 {d bes f} |
-    \tuplet 3/2 {ees8 c ees} \tuplet 3/2 {g ees g} |
-  }
-  \alternative {
-    {
-      \tuplet 3/2 {c8 g ees} \tuplet 3/2 {c g' ees} |
-      \tuplet 3/2 {c8 ees g} \tuplet 3/2 {g ees c} |
-      \tuplet 3/2 {ees8 aes c} \tuplet 3/2 {c, f aes} |
-      \tuplet 3/2 {c,8 f aes} \tuplet 3/2 {c aes c} |
-      bes 4 r |
+  <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "clarinet2"
+      \magnifyStaff #2/3
+      %firstClef = ##f
     }
     {
-      \tuplet 3/2 {c,8 ees g} \tuplet 3/2 {ees g ees} |
+      \repeat volta 2 \relative c'' {
+        bes8\p g16 ees g ees bes8 |
+        ees8 g16 bes ees bes g8 |
+        bes8 g16 ees g ees bes8 |
+        ees8 g16 bes g bes ees8 |
+
+        g8 ees16 bes ees bes g8 |
+        ees8 c'16 bes aes g f8 |
+        e'8 c16 e c e c8 |
+        e8 bes16 e c e c8 |
+
+        c,8 ees16 f aes f c8 |
+        f8 aes16 bes d bes f8 |
+        ees8 c16 ees g ees g8 |
+      }
+      \alternative {
+        \relative c'' {
+          c8 g16 ees c g' ees8 |
+          c8 ees16 g g ees c8 |
+          ees8 aes16 c c, f aes8 |
+          c,8 f16 aes c aes c8 |
+          bes 4 r |
+        }
+        \relative c' {
+          c8 ees16 g ees g ees8 |
+        }
+      }
+      \relative c' {
+        d8 f16 bes d b f8
+        ees8 g16 c bes e, f8|
+        bes4 bes8. bes16 | bes8. r16 r4 |
+      }
     }
-  }
-  \tuplet 3/2 {d8 f bes} \tuplet 3/2 {d b f}
-  \tuplet 3/2 {ees8 g c} \tuplet 3/2 {bes e, f}|
-  bes4 bes8. bes16 | bes8. r16 r4 |
+    {
+      \repeat volta 2 \relative c'' {
+        \tuplet 3/2 {bes8\p g ees} \tuplet 3/2 {g ees bes} |
+        \tuplet 3/2 {ees8 g bes} \tuplet 3/2 {ees bes g} |
+        \tuplet 3/2 {bes8 g ees} \tuplet 3/2 {g ees bes} |
+        \tuplet 3/2 {ees8 g bes} \tuplet 3/2 {g bes ees} |
+
+        \tuplet 3/2 {g8 ees bes} \tuplet 3/2 {ees bes g} |
+        \tuplet 3/2 {ees8 c' bes} \tuplet 3/2 {aes g f} |
+        \tuplet 3/2 {e'8 c e} \tuplet 3/2 {c e c} |
+        \tuplet 3/2 {e8 bes e} \tuplet 3/2 {c e c} |
+
+        \tuplet 3/2 {c,8 ees f} \tuplet 3/2 {aes f c} |
+        \tuplet 3/2 {f8 aes bes} \tuplet 3/2 {d bes f} |
+        \tuplet 3/2 {ees8 c ees} \tuplet 3/2 {g ees g} |
+      }
+      \alternative {
+        \relative c'' {
+          \tuplet 3/2 {c8 g ees} \tuplet 3/2 {c g' ees} |
+          \tuplet 3/2 {c8 ees g} \tuplet 3/2 {g ees c} |
+          \tuplet 3/2 {ees8 aes c} \tuplet 3/2 {c, f aes} |
+          \tuplet 3/2 {c,8 f aes} \tuplet 3/2 {c aes c} |
+          bes 4 r |
+        }
+        \relative c' {
+          \tuplet 3/2 {c8 ees g} \tuplet 3/2 {ees g ees} |
+        }
+      }
+      \relative c' {
+        \tuplet 3/2 {d8 f bes} \tuplet 3/2 {d b f}
+        \tuplet 3/2 {ees8 g c} \tuplet 3/2 {bes e, f}|
+        bes4 bes8. bes16 | bes8. r16 r4 |
+      }
+    }
+  >>
   \finaleDue
 }
 
@@ -872,15 +998,31 @@ scoreAltoSaxI = \relative c'' {
   \key ees \major
   R2 * 4 |
 
-  \repeat volta 2 {
-    \temaSaxEuphoniumTrio
-  }
-  \alternative {
-    \temaSaxEuphoniumTrioVoltaUno
-    \temaSaxEuphoniumTrioVoltaDue
-  }
-  \temaSaxEuphoniumTrioFinale
-  \finaleUno
+  <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "contralto1"
+      \magnifyStaff #2/3
+      %firstClef = ##f
+    }
+    {
+      \repeat volta 2 { \temaSaxEuphoniumTrioSquare}
+      \alternative { \relative c'' \temaSaxEuphoniumTrioVoltaUnoSquare }
+      {\relative c'' \temaSaxEuphoniumTrioVoltaDueSquare}
+      \relative c' \temaSaxEuphoniumTrioFinaleSquare
+    }
+    {
+      \repeat volta 2 {
+        \relative c'' \temaSaxEuphoniumTrio
+      }
+      \alternative {
+        \relative c''' \temaSaxEuphoniumTrioVoltaUno
+        \relative c'' \temaSaxEuphoniumTrioVoltaDue
+      }
+      \relative c' \temaSaxEuphoniumTrioFinale
+    }
+  >>
+  \relative c'' \finaleUno
 }
 
 scoreAltoSaxII = \relative c' {
@@ -1026,14 +1168,30 @@ scoreTenorSax = \relative c'' {
   \key ees \major
   R2 * 4 |
 
-  \repeat volta 2 {
-    \temaSaxEuphoniumTrio
-  }
-  \alternative {
-    \temaSaxEuphoniumTrioVoltaUno
-    \temaSaxEuphoniumTrioVoltaDue
-  }
-  \temaSaxEuphoniumTrioFinale
+  <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "tenor"
+      \magnifyStaff #2/3
+      %firstClef = ##f
+    }
+    {
+      \repeat volta 2 { \temaSaxEuphoniumTrioSquare}
+      \alternative { \relative c'' \temaSaxEuphoniumTrioVoltaUnoSquare }
+      {\relative c'' \temaSaxEuphoniumTrioVoltaDueSquare}
+      \relative c' \temaSaxEuphoniumTrioFinaleSquare
+    }
+    {
+      \repeat volta 2 {
+        \relative c'' \temaSaxEuphoniumTrio
+      }
+      \alternative {
+        \relative c''' \temaSaxEuphoniumTrioVoltaUno
+        \relative c'' \temaSaxEuphoniumTrioVoltaDue
+      }
+      \relative c' \temaSaxEuphoniumTrioFinale
+    }
+  >>
   \finaleUno
 }
 
@@ -1329,14 +1487,32 @@ scoreEuphonium = \relative c {
   \key ees \major
   R2 * 4 |
 
-  \repeat volta 2 {
-    \relative c'{\temaSaxEuphoniumTrio}
-  }
-  \alternative {
-    \relative c''{\temaSaxEuphoniumTrioVoltaUno}
-    \relative c'{\temaSaxEuphoniumTrioVoltaDue}
-  }
-  \relative c {\temaSaxEuphoniumTrioFinale}
+  <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "euphonium"
+      \magnifyStaff #2/3
+      %firstClef = ##f
+      \clef bass
+    }
+    {
+      \repeat volta 2 { \relative c' \temaSaxEuphoniumTrioSquare}
+      \alternative { \relative c' \temaSaxEuphoniumTrioVoltaUnoSquare }
+      {\relative c' \temaSaxEuphoniumTrioVoltaDueSquare}
+      \relative c \temaSaxEuphoniumTrioFinaleSquare
+    }
+    {
+      \repeat volta 2 {
+        \relative c' \temaSaxEuphoniumTrio
+      }
+      \alternative {
+        \relative c'' \temaSaxEuphoniumTrioVoltaUno
+        \relative c' \temaSaxEuphoniumTrioVoltaDue
+      }
+      \relative c \temaSaxEuphoniumTrioFinale
+    }
+  >>
+
   f''2->\ff |
   bes,16 a g f e ees d c |
   bes2~ |
@@ -1766,8 +1942,8 @@ transposeScoreClarinetOne ={
     }
   }
 }
- 
-scoreClarinetIPart = \new Staff \with {
+
+scoreClarinetIPart = \new Staff = "clarinet1" \with {
   instrumentName = "Clarinetto 1"
   midiInstrument = "clarinet"
   shortInstrumentName = "Cl1"
@@ -1780,8 +1956,8 @@ transposeScoreClarinetTwo ={
     }
   }
 }
- 
-scoreClarinetIIPart = \new Staff \with {
+
+scoreClarinetIIPart = \new Staff = "clarinet2" \with {
   instrumentName = "Clarinetto 2"
   midiInstrument = "clarinet"
   shortInstrumentName = "Cl2"
@@ -1813,7 +1989,7 @@ transposeScoreAltoSaxI = {
   }
 }
 
-scoreAltoSaxIPart = \new Staff \with {
+scoreAltoSaxIPart = \new Staff = "contralto1" \with {
   instrumentName = "S. Contralto 1"
   midiInstrument = "alto sax"
   shortInstrumentName = "SC1"
@@ -1842,13 +2018,13 @@ transposeScoreAltoSaxThreeFour = {
       \scoreAltoSaxThreeFour
     }
   }
-} 
+}
 
 scoreAltoSaxThreeFourPart = \new Staff \with {
   instrumentName = "S. Contralto 3-4"
   midiInstrument = "alto sax"
   shortInstrumentName = "SC3-4"
-} \transposeScoreAltoSaxThreeFour 
+} \transposeScoreAltoSaxThreeFour
 
 transposeScoreTenorSax = {
   \transposition bes {
@@ -1856,9 +2032,9 @@ transposeScoreTenorSax = {
       \scoreTenorSax
     }
   }
-} 
+}
 
-scoreTenorSaxPart = \new Staff \with {
+scoreTenorSaxPart = \new Staff = "tenor" \with {
   instrumentName = "S.Tenore"
   midiInstrument = "tenor sax"
   shortInstrumentName = "ST"
@@ -1930,7 +2106,7 @@ scoreTrombonePart = \new Staff \with {
   shortInstrumentName = "Tb"
 } { \clef bass \scoreTrombone }
 
-scoreEuphoniumPart = \new Staff \with {
+scoreEuphoniumPart = \new Staff = "euphonium" \with {
   instrumentName = "Eufonio"
   midiInstrument = "trombone"
   shortInstrumentName = "E"
@@ -2135,6 +2311,7 @@ Header = \header {
     ragged-last-bottom = ##f
     ragged-bottom = ##f
     print-page-number = ##f
+    page-count = #1
   }
 
   \bookpart {
