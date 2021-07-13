@@ -2131,7 +2131,7 @@ Header = \header {
   \Header
   \bookOutputName "Beppe_e_Fiore-Parti"
   \paper {
-    #(set-paper-size "a4" 'landscape)
+    #(set-paper-size "a4landscape")
     ragged-last-bottom = ##f
     ragged-bottom = ##f
     print-page-number = ##f
