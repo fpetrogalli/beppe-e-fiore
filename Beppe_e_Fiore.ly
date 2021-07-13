@@ -1822,7 +1822,7 @@ scoreAltoSaxIPart = \new Staff \with {
 transposeScoreAltoSaxII = {
   \transposition ees {
     \transpose ees c' {
-      \scoreAltoSaxI
+      \scoreAltoSaxII
     }
   }
 }
