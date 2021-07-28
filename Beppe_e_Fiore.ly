@@ -2250,6 +2250,29 @@ Header = \header {
     }
   }
   \bookpart {
+    \markuplist {
+       \vspace #1
+       \bold\huge{"Registro delle modifiche"}
+       \vspace #1
+       \bold\large{\with-url #"https://github.com/fpetrogalli/beppe-e-fiore/releases/tag/v1.1" "Edizione v1.1, 28 luglio 2021"}
+       \vspace #1
+       \justified-lines {
+         Su suggerimento del Maestro Roberto Milani della \with-url #"https://www.bandacivicadidello.it/" "Banda Civica di Dello," aggiunte versioni del \italic{trio} senza terzine per clarinetto 1 e 2, sax contralto 1, sax tenore, ed eufonio.
+       }
+       \vspace #1
+       \bold\large{\with-url #"https://github.com/fpetrogalli/beppe-e-fiore/releases/tag/v1.0" "Edizione v1.0, 29 marzo 2021"}
+       \vspace #1
+       \justified-lines {Prima edizione.}
+    }
+  }
+  \bookpart {
+    \paper {
+      print-page-number = ##f
+    }
+  % Empty page to ensure the dedication is on an odd page.
+  \markup " "
+  }
+  \bookpart {
     \paper {
       print-page-number = ##f
     }
@@ -2326,12 +2349,12 @@ Header = \header {
 
   \bookpart {
     \header { instrument = "Clarinetto 1"}
-    \score { \new Staff <<\markings \transposeScoreClarinetOne>> }
+    \score { \new Staff = "clarinet1" <<\markings \transposeScoreClarinetOne>> }
   }
 
   \bookpart {
     \header { instrument = "Clarinetto 2"}
-    \score { \new Staff <<\markings \transposeScoreClarinetTwo>> }
+    \score { \new Staff = "clarinet2" <<\markings \transposeScoreClarinetTwo>> }
   }
 
   \bookpart {
@@ -2341,7 +2364,7 @@ Header = \header {
 
   \bookpart {
     \header { instrument = "Sax Contralto 1"}
-    \score { \new Staff <<\markings \transposeScoreAltoSaxI>> }
+    \score { \new Staff = "contralto1" <<\markings \transposeScoreAltoSaxI>> }
   }
 
   \bookpart {
@@ -2356,7 +2379,7 @@ Header = \header {
 
   \bookpart {
     \header { instrument = "Sax Tenore"}
-    \score { \new Staff <<\markings \transposeScoreTenorSax>> }
+    \score { \new Staff = "tenor" <<\markings \transposeScoreTenorSax>> }
   }
 
   \bookpart {
@@ -2386,7 +2409,7 @@ Header = \header {
 
   \bookpart {
     \header { instrument = "Eufonio"}
-    \score { \new Staff <<\markings \clef bass \scoreEuphonium>> }
+    \score { \new Staff = "euphonium" <<\markings \clef bass \scoreEuphonium>> }
   }
 
   \bookpart {
