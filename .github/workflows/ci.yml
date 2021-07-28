@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install packages
-      run: apt-get install lilypond
+      run: sudo apt-get install lilypond
     - name: build
       run: make
     - uses: actions/upload-artifact@v2
