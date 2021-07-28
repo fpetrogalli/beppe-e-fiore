@@ -697,6 +697,7 @@ scoreClarinetOne =
       %firstClef = ##f
     }
     {
+      \key ees \major
       \repeat volta 2 \relative c'' {
         ees8\p bes16 g  bes g ees8 |
         bes8 ees16 g  bes g ees8 |
@@ -800,6 +801,7 @@ scoreClarinetTwo = \relative c' {
       %firstClef = ##f
     }
     {
+      \key ees \major
       \repeat volta 2 \relative c'' {
         bes8\p g16 ees g ees bes8 |
         ees8 g16 bes ees bes g8 |
@@ -1006,6 +1008,7 @@ scoreAltoSaxI = \relative c'' {
       %firstClef = ##f
     }
     {
+      \key ees \major
       \repeat volta 2 { \temaSaxEuphoniumTrioSquare}
       \alternative { \relative c'' \temaSaxEuphoniumTrioVoltaUnoSquare }
       {\relative c'' \temaSaxEuphoniumTrioVoltaDueSquare}
@@ -1176,6 +1179,7 @@ scoreTenorSax = \relative c'' {
       %firstClef = ##f
     }
     {
+      \key ees \major
       \repeat volta 2 { \temaSaxEuphoniumTrioSquare}
       \alternative { \relative c'' \temaSaxEuphoniumTrioVoltaUnoSquare }
       {\relative c'' \temaSaxEuphoniumTrioVoltaDueSquare}
@@ -1496,6 +1500,7 @@ scoreEuphonium = \relative c {
       \clef bass
     }
     {
+      \key ees \major
       \repeat volta 2 { \relative c' \temaSaxEuphoniumTrioSquare}
       \alternative { \relative c' \temaSaxEuphoniumTrioVoltaUnoSquare }
       {\relative c' \temaSaxEuphoniumTrioVoltaDueSquare}
