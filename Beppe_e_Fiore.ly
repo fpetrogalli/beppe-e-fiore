@@ -2154,7 +2154,7 @@ piattiPart = \new DrumStaff \with {
 
 Dedication = \markup { "Agli amici della" \with-url #"https://www.bandacivicadidello.it/" "Banda Civica di Dello"}
 Title = \markup {"Beppe e Fiore"}
-Version = \markup {"v1.0"}
+Version = \markup {"v1.1"}
 GitHub = \markup {\with-url #"http://github.com/fpetrogalli/beppe-e-fiore/" "github.com/fpetrogalli/beppe-e-fiore"}
 GitHubRelease =  \markup {\with-url #"http://github.com/fpetrogalli/beppe-e-fiore/releases/latest" "github.com/fpetrogalli/beppe-e-fiore/releases/latest"}
 GitHubAndVersion = \markup { \GitHub"-" \Version}
