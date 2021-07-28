@@ -2169,21 +2169,21 @@ Copyright = \markup {
     }
   }
 }
-BuyMeCoffee = \markup { "Ti piace? Offrimi un caffè qui:" \with-url #"https://ko-fi.com/tubafranz" "ko-fi.com/tubafranz"}
+BuyMeCoffee = \markup { \with-url #"https://ko-fi.com/tubafranz" "ko-fi.com/tubafranz"}
 CCLogo = \markup {
   \general-align #Y #DOWN {
     \with-url #"https://creativecommons.org/licenses/by-sa/4.0" \epsfile #X #20 #"by-sa.eps"
   }
 }
 Allegria = \markup {"Marcia Allegra"}
+ArrangerAndCoffee = \markup {\BuyMeCoffee "-" \Arranger}
 Header = \header {
   dedication = \Dedication
   title = \Title
   subtitle = \Allegria
   composer = \Composer
-  arranger = \Arranger
+  arranger = \ArrangerAndCoffee
   copyright = \Copyright
-  opus= \BuyMeCoffee
   meter = \GitHubAndVersion
   poet = \CCLogo
   tagline = ##f
