@@ -11,7 +11,7 @@ global = {
   \tempo "Allegro"
 }
 
-scoreAPiccolo = \relative c''' {
+scorePiccolo = \relative c''' {
   \global
   \transposition c''
   \key bes \major
@@ -104,7 +104,7 @@ scoreAPiccolo = \relative c''' {
   ees8 r r4 |
 }
 
-scoreAFlute = \relative c''' {
+scoreFlute = \relative c''' {
   \global
   % Music follows here.
   \key bes \major
@@ -197,7 +197,7 @@ scoreAFlute = \relative c''' {
   ees8 r r4 |
 }
 
-scoreAEflatClarinet = \relative c''' {
+scoreEflatClarinet = \relative c''' {
   \global
   \transposition es'
   % Music follows here.
@@ -291,7 +291,7 @@ scoreAEflatClarinet = \relative c''' {
   c8 r r4 |
 }
 
-scoreAClarinetI = \relative c'' {
+scoreClarinetI = \relative c'' {
   \global
   \transposition bes
   % Music follows here.
@@ -384,7 +384,7 @@ scoreAClarinetI = \relative c'' {
   f8 r r4 |
 }
 
-scoreAClarinetII = \relative c'' {
+scoreClarinetII = \relative c'' {
   \global
   \transposition bes
   % Music follows here.
@@ -478,7 +478,7 @@ scoreAClarinetII = \relative c'' {
   c8 r r4 |
 }
 
-scoreAAltoSaxI = \relative c''' {
+scoreAltoSaxI = \relative c''' {
   \global
   \transposition es
   % Music follows here.
@@ -571,7 +571,7 @@ scoreAAltoSaxI = \relative c''' {
   c8 r r4 |
 }
 
-scoreAAltoSaxII = \relative c'' {
+scoreAltoSaxII = \relative c'' {
   \global
   \transposition es
   % Music follows here.
@@ -665,7 +665,7 @@ scoreAAltoSaxII = \relative c'' {
   g8 r r4 |
 }
 
-scoreATenorSax = \relative c'' {
+scoreTenorSax = \relative c'' {
   \global
   \transposition bes,
   % Music follows here.
@@ -759,7 +759,7 @@ scoreATenorSax = \relative c'' {
   f8 r r4 |
 }
 
-scoreABaritoneSax = \relative c'' {
+scoreBaritoneSax = \relative c'' {
   \global
   \set countPercentRepeats = ##t
   \transposition es,
@@ -858,7 +858,7 @@ scoreABaritoneSax = \relative c'' {
   c8 r r4 |
 }
 
-scoreAHornFI = \relative c'' {
+scoreHornFI = \relative c'' {
   \global
   \set countPercentRepeats = ##t
   \transposition f
@@ -952,7 +952,7 @@ scoreAHornFI = \relative c'' {
   bes8 r r4 |
 }
 
-scoreAHornFII = \relative c'' {
+scoreHornFII = \relative c'' {
   \global
   \set countPercentRepeats = ##t
   \transposition f
@@ -1050,7 +1050,7 @@ scoreAHornFII = \relative c'' {
   d8 r r4 |
 }
 
-scoreATrumpetBbI = \relative c'' {
+scoreTrumpetBbI = \relative c'' {
   \global
   \transposition bes
   % Music follows here.
@@ -1155,7 +1155,7 @@ scoreATrumpetBbI = \relative c'' {
   f8 r r4 |
 }
 
-scoreATrumpetBbII = \relative c'' {
+scoreTrumpetBbII = \relative c'' {
   \global
   \transposition bes
   % Music follows here.
@@ -1262,7 +1262,7 @@ scoreATrumpetBbII = \relative c'' {
   a8 r r4 |
 }
 
-scoreATromboneI = \relative c' {
+scoreTromboneI = \relative c' {
   \global
   \set countPercentRepeats = ##t
   % Music follows here.
@@ -1358,7 +1358,7 @@ scoreATromboneI = \relative c' {
   ees 8 r r 4 |
 }
 
-scoreATromboneII = \relative c' {
+scoreTromboneII = \relative c' {
   \global
   \set countPercentRepeats = ##t
   % Music follows here.
@@ -1456,7 +1456,7 @@ scoreATromboneII = \relative c' {
   ees8 r r4 |
 }
 
-scoreATromboneIII = \relative c' {
+scoreTromboneIII = \relative c' {
   \global
   \set countPercentRepeats = ##t
   % Music follows here.
@@ -1552,13 +1552,13 @@ scoreATromboneIII = \relative c' {
   ees8 r r4 |
 }
 
-scoreABaritoneI = \relative c {
+scoreBaritoneI = \relative c {
   \global
   % Music follows here.
 
 }
 
-scoreABaritoneII = \relative c' {
+scoreBaritoneII = \relative c' {
   \global
   % Music follows here.
   \key bes \major
@@ -1647,7 +1647,7 @@ scoreABaritoneII = \relative c' {
 
 }
 
-scoreATuba = \relative c {
+scoreTuba = \relative c {
   \global
   \set countPercentRepeats = ##t
   % Music follows here.
@@ -1747,7 +1747,7 @@ scoreATuba = \relative c {
   ees8 r r4 |
 }
 
-scoreADrumDrumsI = \drummode {
+scoreDrumDrumsI = \drummode {
   \global
   \set countPercentRepeats = ##t
   % Drums follow here.
@@ -1793,7 +1793,7 @@ scoreADrumDrumsI = \drummode {
   cymr8 r r 4|
 }
 
-scoreADrumDrumsII = \drummode {
+scoreDrumDrumsII = \drummode {
   \global
   % Drums follow here.
   \set countPercentRepeats = ##t
@@ -1867,7 +1867,7 @@ scoreADrumDrumsII = \drummode {
   sn8 r r4 |
 }
 
-scoreADrumDrumsIII = \drummode {
+scoreDrumDrumsIII = \drummode {
   \global
   % Drums follow here.
   \set countPercentRepeats = ##t
@@ -1951,143 +1951,143 @@ markings = {
   }
   s2 * 3 \bar "|."
 }
-scoreAPiccoloPart = \new Staff \with {
+scorePiccoloPart = \new Staff \with {
   instrumentName = "Ottavino"
   shortInstrumentName = "Ott."
   midiInstrument = "piccolo"
-} <<\scoreAPiccolo \markings>>
+} <<\scorePiccolo \markings>>
 
-scoreAFlutePart = \new Staff \with {
+scoreFlutePart = \new Staff \with {
   instrumentName = "Flauto"
   shortInstrumentName = "Fl."
   midiInstrument = "flute"
-} <<\scoreAFlute \markings>>
+} <<\scoreFlute \markings>>
 
-scoreAEflatClarinetPart = \new Staff \with {
+scoreEflatClarinetPart = \new Staff \with {
   instrumentName = "Clarinetto Mib "
   shortInstrumentName = "Cl. Mib"
   midiInstrument = "clarinet"
-} \scoreAEflatClarinet
+} \scoreEflatClarinet
 
-scoreAClarinetIPart = \new Staff \with {
+scoreClarinetIPart = \new Staff \with {
   instrumentName = "Clarinetto 1"
   shortInstrumentName = "Cl. 1"
   midiInstrument = "clarinet"
-} \scoreAClarinetI
+} \scoreClarinetI
 
-scoreAClarinetIIPart = \new Staff \with {
+scoreClarinetIIPart = \new Staff \with {
   instrumentName = "Clarinetto 2"
   shortInstrumentName = "Cl. 2"
   midiInstrument = "clarinet"
-} \scoreAClarinetII
+} \scoreClarinetII
 
-scoreAAltoSaxIPart = \new Staff \with {
+scoreAltoSaxIPart = \new Staff \with {
   instrumentName = "Sax contralto 1"
   shortInstrumentName = "S. c. 1"
   midiInstrument = "alto sax"
-} \scoreAAltoSaxI
+} \scoreAltoSaxI
 
-scoreAAltoSaxIIPart = \new Staff \with {
+scoreAltoSaxIIPart = \new Staff \with {
   instrumentName = "Sax contralto 2"
   shortInstrumentName = "S. c. 2"
   midiInstrument = "alto sax"
-} \scoreAAltoSaxII
+} \scoreAltoSaxII
 
-scoreATenorSaxPart = \new Staff \with {
+scoreTenorSaxPart = \new Staff \with {
   instrumentName = "Sax tenore"
   shortInstrumentName = "S. t."
   midiInstrument = "tenor sax"
-} \scoreATenorSax
+} \scoreTenorSax
 
-scoreABaritoneSaxPart = \new Staff \with {
+scoreBaritoneSaxPart = \new Staff \with {
   instrumentName = "Sax Baritono"
   shortInstrumentName = "S. b."
   midiInstrument = "baritone sax"
-} \scoreABaritoneSax
+} \scoreBaritoneSax
 
-scoreAHornFIPart = \new Staff \with {
+scoreHornFIPart = \new Staff \with {
   instrumentName = "Corno in Fa 1"
   shortInstrumentName = "C. Fa 1"
   midiInstrument = "french horn"
-} \scoreAHornFI
+} \scoreHornFI
 
-scoreAHornFIIPart = \new Staff \with {
+scoreHornFIIPart = \new Staff \with {
   instrumentName = "Corno in Fa 2"
   shortInstrumentName = "C. Fa 2"
   midiInstrument = "french horn"
-} \scoreAHornFII
+} \scoreHornFII
 
-scoreATrumpetBbIPart = \new Staff \with {
+scoreTrumpetBbIPart = \new Staff \with {
   instrumentName = "Tromba in Sib 1"
   shortInstrumentName = "Tr. 1"
   midiInstrument = "trumpet"
-} \scoreATrumpetBbI
+} \scoreTrumpetBbI
 
-scoreATrumpetBbIIPart = \new Staff \with {
+scoreTrumpetBbIIPart = \new Staff \with {
   instrumentName = "Tromba in Sib 2"
   shortInstrumentName = "Tr. 2"
   midiInstrument = "trumpet"
-} \scoreATrumpetBbII
+} \scoreTrumpetBbII
 
-scoreATromboneIPart = \new Staff \with {
+scoreTromboneIPart = \new Staff \with {
   instrumentName = "Trombone 1"
   shortInstrumentName = "Tro. 1"
   midiInstrument = "trombone"
-} { \clef bass \scoreATromboneI }
+} { \clef bass \scoreTromboneI }
 
-scoreATromboneIIPart = \new Staff \with {
+scoreTromboneIIPart = \new Staff \with {
   instrumentName = "Trombone 2"
   shortInstrumentName = "Tro. 2"
   midiInstrument = "trombone"
-} { \clef bass \scoreATromboneII }
+} { \clef bass \scoreTromboneII }
 
-scoreATromboneIIIPart = \new Staff \with {
+scoreTromboneIIIPart = \new Staff \with {
   instrumentName = "Trombone 3"
   shortInstrumentName = "Tro. 3"
   midiInstrument = "trombone"
-} { \clef bass \scoreATromboneIII }
+} { \clef bass \scoreTromboneIII }
 
-scoreABaritoneIPart = \new Staff \with {
+scoreBaritoneIPart = \new Staff \with {
   instrumentName = "Eufonio Sib"
   shortInstrumentName = "Euf. Sib"
   midiInstrument = "trombone"
-} { \clef treble \transpose bes c'' \scoreABaritoneII }
+} { \clef treble \transpose bes c'' \scoreBaritoneII }
 
-scoreABaritoneIIPart = \new Staff \with {
+scoreBaritoneIIPart = \new Staff \with {
   instrumentName = "Eufonio"
   shortInstrumentName = "Euf."
   midiInstrument = "trombone"
-} { \clef bass \scoreABaritoneII }
+} { \clef bass \scoreBaritoneII }
 
-scoreATubaPart = \new Staff \with {
+scoreTubaPart = \new Staff \with {
   instrumentName = "Tuba"
   shortInstrumentName = "Tub."
   midiInstrument = "tuba"
-} { \clef bass \scoreATuba }
+} { \clef bass \scoreTuba }
 
-scoreADrumsIPart = \new DrumStaff \with {
+scoreDrumsIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "Piatti"
   shortInstrumentName = "Pia."
   %drumStyleTable = #percussion-style
   %\override StaffSymbol #'line-count = #1
-} \scoreADrumDrumsI
+} \scoreDrumDrumsI
 
-scoreADrumsIIPart = \new DrumStaff \with {
+scoreDrumsIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "Rullante"
   shortInstrumentName = "Rul."
   drumStyleTable = #percussion-style
   \override StaffSymbol #'line-count = #1
-} \scoreADrumDrumsII
+} \scoreDrumDrumsII
 
-scoreADrumsIIIPart = \new DrumStaff \with {
+scoreDrumsIIIPart = \new DrumStaff \with {
   \consists "Instrument_name_engraver"
   instrumentName = "Grancassa"
   shortInstrumentName = "Gra."
   drumStyleTable = #percussion-style
   \override StaffSymbol #'line-count = #1
-} \scoreADrumDrumsIII
+} \scoreDrumDrumsIII
 
 Dedication = \markup { "Agli amici della" \with-url #"https://www.bandacivicadidello.it/" "Banda Civica di Dello"}
 Title = \markup {"Beppe e Fiore"}
@@ -2246,32 +2246,32 @@ Header = \header {
     \score {
       <<
         \new StaffGroup <<
-          \scoreAPiccoloPart
-          \scoreAFlutePart
-          \scoreAEflatClarinetPart
-          \scoreAClarinetIPart
-          \scoreAClarinetIIPart
-          \scoreAAltoSaxIPart
-          \scoreAAltoSaxIIPart
-          \scoreATenorSaxPart
-          \scoreABaritoneSaxPart
+          \scorePiccoloPart
+          \scoreFlutePart
+          \scoreEflatClarinetPart
+          \scoreClarinetIPart
+          \scoreClarinetIIPart
+          \scoreAltoSaxIPart
+          \scoreAltoSaxIIPart
+          \scoreTenorSaxPart
+          \scoreBaritoneSaxPart
         >>
         \new StaffGroup <<
-          \scoreAHornFIPart
-          \scoreAHornFIIPart
-          \scoreATrumpetBbIPart
-          \scoreATrumpetBbIIPart
-          \scoreATromboneIPart
-          \scoreATromboneIIPart
-          \scoreATromboneIIIPart
-          \scoreABaritoneIPart
-          \scoreABaritoneIIPart
-          \scoreATubaPart
+          \scoreHornFIPart
+          \scoreHornFIIPart
+          \scoreTrumpetBbIPart
+          \scoreTrumpetBbIIPart
+          \scoreTromboneIPart
+          \scoreTromboneIIPart
+          \scoreTromboneIIIPart
+          \scoreBaritoneIPart
+          \scoreBaritoneIIPart
+          \scoreTubaPart
         >>
         \new StaffGroup <<
-          \scoreADrumsIPart
-          \scoreADrumsIIPart
-          \scoreADrumsIIIPart
+          \scoreDrumsIPart
+          \scoreDrumsIIPart
+          \scoreDrumsIIIPart
         >>
       >>
       \layout { }
@@ -2293,79 +2293,79 @@ Header = \header {
 
   \bookpart {
     \header { instrument = "Ottavino"}
-    \score { \new Staff <<\markings \scoreAPiccolo>> }
+    \score { \new Staff <<\markings \scorePiccolo>> }
   }
   \bookpart {
     \header { instrument = "Flauto"}
-    \score { \new Staff <<\markings \scoreAFlute>> }
+    \score { \new Staff <<\markings \scoreFlute>> }
   }
   \bookpart {
     \header { instrument = "Clarinetto Mib"}
-    \score { \new Staff <<\markings \scoreAEflatClarinet>> }
+    \score { \new Staff <<\markings \scoreEflatClarinet>> }
   }
   \bookpart {
     \header { instrument = "Clarinetto 1"}
-    \score { \new Staff <<\markings \scoreAClarinetI>> }
+    \score { \new Staff <<\markings \scoreClarinetI>> }
   }
   \bookpart {
     \header { instrument = "Clarinetto 2"}
-    \score { \new Staff <<\markings \scoreAClarinetII>> }
+    \score { \new Staff <<\markings \scoreClarinetII>> }
   }
   \bookpart {
     \header { instrument = "Sax Contralto 1"}
-    \score { \new Staff <<\markings \scoreAAltoSaxI>> }
+    \score { \new Staff <<\markings \scoreAltoSaxI>> }
   }
   \bookpart {
     \header { instrument = "Sax Contralto 2"}
-    \score { \new Staff <<\markings \scoreAAltoSaxII>> }
+    \score { \new Staff <<\markings \scoreAltoSaxII>> }
   }
   \bookpart {
     \header { instrument = "Sax Tenore"}
-    \score { \new Staff <<\markings \scoreATenorSax>> }
+    \score { \new Staff <<\markings \scoreTenorSax>> }
   }
   \bookpart {
     \header { instrument = "Sax Baritono"}
-    \score { \new Staff <<\markings \scoreABaritoneSax>> }
+    \score { \new Staff <<\markings \scoreBaritoneSax>> }
   }
   \bookpart {
     \header { instrument = "Corno in Fa 1"}
-    \score { \new Staff <<\markings \scoreAHornFI>> }
+    \score { \new Staff <<\markings \scoreHornFI>> }
   }
   \bookpart {
     \header { instrument = "Corno in Fa 2"}
-    \score { \new Staff <<\markings \scoreAHornFI>> }
+    \score { \new Staff <<\markings \scoreHornFI>> }
   }
   \bookpart {
     \header { instrument = "Tromba in Sib 1"}
-    \score { \new Staff <<\markings \scoreATrumpetBbI>> }
+    \score { \new Staff <<\markings \scoreTrumpetBbI>> }
   }
   \bookpart {
     \header { instrument = "Tromba In Sib 2"}
-    \score { \new Staff <<\markings \scoreATrumpetBbII>> }
+    \score { \new Staff <<\markings \scoreTrumpetBbII>> }
   }
   \bookpart {
     \header { instrument = "Trombone 1"}
-    \score { \new Staff <<\markings \scoreATromboneI>> }
+    \score { \new Staff <<\markings \scoreTromboneI>> }
   }
   \bookpart {
     \header { instrument = "Trombone 2"}
-    \score { \new Staff <<\markings {\clef bass \scoreATromboneII}>> }
+    \score { \new Staff <<\markings {\clef bass \scoreTromboneII}>> }
   }
   \bookpart {
     \header { instrument = "Trombone 3"}
-    \score { \new Staff <<\markings {\clef bass \scoreATromboneIII}>> }
+    \score { \new Staff <<\markings {\clef bass \scoreTromboneIII}>> }
   }
   \bookpart {
     \header { instrument = "Eufonio Sib"}
-    \score { \new Staff <<\markings { \clef treble \transpose bes c'' \scoreABaritoneII}>> }
+    \score { \new Staff <<\markings { \clef treble \transpose bes c'' \scoreBaritoneII}>> }
   }
   \bookpart {
     \header { instrument = "Eufonio"}
-    \score { \new Staff <<\markings {\clef bass \scoreABaritoneII}>> }
+    \score { \new Staff <<\markings {\clef bass \scoreBaritoneII}>> }
   }
   \bookpart {
     \header { instrument = "Tuba"}
-    \score { \new Staff <<\markings {\clef bass \scoreATuba}>> }
+    \score { \new Staff <<\markings {\clef bass \scoreTuba}>> }
   }
   \bookpart {
     \header { instrument = "Piatti"}
@@ -2373,7 +2373,7 @@ Header = \header {
       \new DrumStaff \with {
         drumStyleTable = #percussion-style
         %\override StaffSymbol #'line-count = #1
-      } <<\markings \scoreADrumDrumsI >>
+      } <<\markings \scoreDrumDrumsI >>
     }
   }
   \bookpart {
@@ -2382,7 +2382,7 @@ Header = \header {
       \new DrumStaff \with {
         drumStyleTable = #percussion-style
         \override StaffSymbol #'line-count = #1
-      } <<\markings \scoreADrumDrumsII >>
+      } <<\markings \scoreDrumDrumsII >>
     }
   }
   \bookpart {
@@ -2391,7 +2391,7 @@ Header = \header {
       \new DrumStaff \with {
         drumStyleTable = #percussion-style
         \override StaffSymbol #'line-count = #1
-      } <<\markings \scoreADrumDrumsIII >>
+      } <<\markings \scoreDrumDrumsIII >>
     }
   }
 }
