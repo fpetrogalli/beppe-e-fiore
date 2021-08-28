@@ -11,7 +11,6 @@ global = {
   \tempo "Allegro"
 }
 
-myBreak = {\break}
 scoreAPiccolo = \relative c''' {
   \global
   \transposition c''
@@ -125,7 +124,6 @@ scoreAFlute = \relative c''' {
     d8. e16 f8 d |
     c8 bes a g |
     f8 r r f' |
-    \myBreak
 
     g8 f ees d |
     ees8 d c bes |
@@ -220,7 +218,6 @@ scoreAEflatClarinet = \relative c''' {
     b8. cis16 d8 b |
     a8 g fis e |
     d8 r r d' |
-    \myBreak
 
     e8 d c b |
     c8 b a g |
@@ -314,7 +311,6 @@ scoreAClarinetI = \relative c'' {
     e8. fis16 g8 e |
     d8 c b a |
     g8 r r g' |
-    \myBreak
 
     a8 g f e |
     f8 e d c |
@@ -502,7 +498,6 @@ scoreAAltoSaxI = \relative c''' {
     b8. cis16 d8 b |
     a8 g fis e |
     d8 r r d |
-    \myBreak
 
     e8 d c b |
     c8 b a g |
