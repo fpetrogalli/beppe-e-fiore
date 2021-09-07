@@ -2206,7 +2206,7 @@ Header = \header {
       \vspace #1
       \bold\huge{"Registro delle modifiche"}
       \vspace #1
-      \bold\large{\with-url #"https://github.com/fpetrogalli/beppe-e-fiore/releases/tag/v2.0" "Edizione v2.0, 28 agosto 2021"}
+      \bold\large{\with-url #"https://github.com/fpetrogalli/beppe-e-fiore/releases/tag/v2.0" "Edizione v2.0, 7 settembre 2021"}
       \vspace #1
       \justified-lines {
         Orchestrazione del Maestro Roberto Milani della \with-url #"https://www.bandacivicadidello.it/" "Banda Civica di Dello." Le parti sono state ridistribuite e/o aggiunte per adattare il pezzo ad una formazione bandistica tradizionale.
