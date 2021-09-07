@@ -2345,7 +2345,7 @@ Header = \header {
   }
   \bookpart {
     \header { instrument = "Trombone 1"}
-    \score { \new Staff <<\markings \scoreTromboneI>> }
+    \score { \new Staff <<\markings {\clef bass \scoreTromboneI}>> }
   }
   \bookpart {
     \header { instrument = "Trombone 2"}
